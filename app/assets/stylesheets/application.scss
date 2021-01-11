@@ -31,6 +31,7 @@
   font: 'メイリオ';
 }
 
+//右側コメントCSS
 .balloon1:before {
   content: "";
   position: absolute;
@@ -40,13 +41,13 @@
   margin-left: -15px;
   border: 10px solid transparent;
   border-top: 15px solid #87c0cd;
-
+  text-align: left;
 }
 .balloon1 {
   position: relative;
   z-index: 1;
   display: inline-block;
-  margin: 1.5em 0;
+  margin: 1em 0;
   padding: 7px 10px;
   min-width: 12px;
   max-width: 100%;
@@ -58,6 +59,40 @@
 
 
 .balloon1 p {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+//左側コメント
+.balloon2:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  right: 97%;
+  margin-right: -15px;
+  border: 10px solid transparent;
+  border-top: 15px solid gainsboro;
+}
+
+.balloon2 {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 1em 0;
+  padding: 7px 10px;
+  min-width: 12px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: gainsboro;
+  border-radius: 15px;
+}
+
+.balloon2 p {
   position: relative;
   z-index: 0;
   margin: 0;

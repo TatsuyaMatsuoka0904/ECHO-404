@@ -14,9 +14,13 @@
             </div>
           </div>
           <% else %>
-            <div class="left-message">
-            <%= m.content %>
-          </div>
+            <div class="col-md-5 .text-nowrap">
+              <div class="left-message">
+                <div class="balloon2">
+                  <p style="text-align: left;"><%= m.content %></p>
+                </div>
+              </div>
+            </div>
           <% end %>
         <% end %>
 
@@ -26,15 +30,19 @@
       <div class="chat-field">
         <% @messages.each do |m| %>
           <% if m.is_user %>
-            <div class="col-md-1">
-              <div class="balloon1">
-                  <p style="text-align: right;"><%= m.content %></p>
+            <div class="col-md-5 .text-nowrap">
+              <div class="left-message">
+                <div class="balloon2">
+                  <p style="text-align: left;"><%= m.content %></p>
                 </div>
               </div>
+            </div>
           <% else %>
-            <div class="col-md-12">
-              <div class="balloon2">
+            <div class="col-md-5 .text-nowrap">
+              <div class="right-message">
+                <div class="balloon1">
                 <p style="text-align: left;"><%= m.content %></p>
+                </div>
               </div>
             </div>
           <% end %>
