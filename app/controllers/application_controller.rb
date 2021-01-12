@@ -1,5 +1,7 @@
-class ApplicationController < ActionController::Base 
+class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
+  # before_action :authenticate
+  helper_method :logged_in?, :current_studio
 
   protected
 
@@ -12,4 +14,21 @@ class ApplicationController < ActionController::Base
       super
     end
   end
+
+  def logged_in?
+    !!current_studio
+  end
+
+  # def current_studio
+  #   return unless session[:current_studio]
+  #
+  #   @current_studio ||= Studio.find(session[:studio_id])
+  # end
+
+  def authenticate
+    return if logged_in?
+
+    redirect_to root_path, alert:'ログインしてください'
+  end
+
 end
