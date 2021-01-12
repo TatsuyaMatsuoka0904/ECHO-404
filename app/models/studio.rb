@@ -5,4 +5,5 @@ class Studio < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :rooms
+  has_many :created_events, class_name: 'Event', foreign_key: 'studio_id'
 end

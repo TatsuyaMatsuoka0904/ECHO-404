@@ -36,8 +36,8 @@
   content: "";
   position: absolute;
   z-index: 2;
-  top: 10%;
-  left: 101%;
+  top: 8%;
+  left: 100%;
   margin-left: -15px;
   border: 10px solid transparent;
   border-top: 15px solid #87c0cd;
@@ -70,7 +70,6 @@
 .balloon2:before {
   content: "";
   position: absolute;
-  z-index: 2;
   top: 10%;
   right: 97%;
   margin-right: -15px;
@@ -80,11 +79,10 @@
 
 .balloon2 {
   position: relative;
-  z-index: 1;
   display: inline-block;
   margin: 1em 0;
   padding: 7px 10px;
-  min-width: 12px;
+  min-width: 1px;
   max-width: 100%;
   color: #555;
   font-size: 16px;

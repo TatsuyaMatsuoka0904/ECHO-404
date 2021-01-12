@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f2c30507-8c2a-406b-a3bf-3e6ed281e59f" name="デフォルト変更リスト" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/rooms/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rooms/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/studios/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/studios/registrations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +55,9 @@
   <component name="NamedScopeManager">
     <scope name="Git Scope" pattern="" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
+  </component>
   <component name="ProjectId" id="1mlYhhBBe5ladAEGVcY6MBOp2rE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -62,10 +65,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210111_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210113_0002" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -201,7 +205,8 @@
       <workItem from="1610159469875" duration="5000" />
       <workItem from="1610159726304" duration="10068000" />
       <workItem from="1610279389732" duration="295000" />
-      <workItem from="1610331293031" duration="11274000" />
+      <workItem from="1610331293031" duration="41248000" />
+      <workItem from="1610474710291" duration="2861000" />
     </task>
     <task id="LOCAL-00001" summary="git dev push">
       <created>1610337281659</created>
@@ -217,7 +222,28 @@
       <option name="project" value="LOCAL" />
       <updated>1610343579391</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="#3[チャット機能右側吹き出し]">
+      <created>1610349508924</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610349508924</updated>
+    </task>
+    <task id="LOCAL-00004" summary="#3[event作成機能追加]">
+      <created>1610468074487</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610468074487</updated>
+    </task>
+    <task id="LOCAL-00005" summary="#4[user_edit機能追加]">
+      <created>1610477044399</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610477044399</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +252,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git dev push" />
     <MESSAGE value="#2[チャット機能左側吹き出し]" />
-    <option name="LAST_COMMIT_MESSAGE" value="#2[チャット機能左側吹き出し]" />
+    <MESSAGE value="#3[チャット機能右側吹き出し]" />
+    <MESSAGE value="#3[event作成機能追加]" />
+    <MESSAGE value="#4[user_edit機能追加]" />
+    <option name="LAST_COMMIT_MESSAGE" value="#4[user_edit機能追加]" />
   </component>
 </project>

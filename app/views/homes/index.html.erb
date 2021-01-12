@@ -1,6 +1,3 @@
-<div class="container-fluid">
-  <div class="row">
-
 <% if user_signed_in? %>
   <h2>スタジオ一覧</h2>
       <%= link_to "ログアウト", destroy_user_session_path ,:method => :delete %>
@@ -19,22 +16,26 @@
 
 <% elsif studio_signed_in? %>
   <h2>ユーザー一覧</h2>
-  <br>
+
   <%= link_to "ログアウト", destroy_studio_session_path ,:method => :delete %>
-  <br>
+  <ul>
   <% @users.each do |user| %>
     <%= user.name %>
     <% if @user_ids.include?(user.id) %>
-      <br>
-      <%= link_to "チャットへ", room_path(current_studio.rooms.find_by(user_id: user.id)) %><br>
+        <li>
+          <%= link_to "チャットへ", room_path(current_studio.rooms.find_by(user_id: user.id)) %>
+        </li>
     <% else %>
       <%= form_for Room.new do |f| %>
         <%= f.hidden_field :user_id, :value => user.id %>
         <%= f.submit %>
       <% end %>
     <% end %>
-
   <% end %>
+  <li>
+    <%= link_to "イベントを作る", new_event_path %>
+  </li>
+  </ul>
 
 <% else %>
   <h3>ユーザー</h3>

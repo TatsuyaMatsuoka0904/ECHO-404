@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_08_021517) do
+ActiveRecord::Schema.define(version: 2021_01_12_020303) do
+
+  create_table "events", force: :cascade do |t|
+    t.bigint "studio_id"
+    t.string "name", null: false
+    t.string "place", null: false
+    t.datetime "start_at", null: false
+    t.datetime "end_at", null: false
+    t.text "content", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["studio_id"], name: "index_events_on_studio_id"
+  end
 
   create_table "messages", force: :cascade do |t|
     t.integer "room_id"
