@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
+  # before_action :authenticate_user!
   before_action :configure_permitted_parameters, if: :devise_controller?
   # before_action :authenticate
   helper_method :logged_in?, :current_studio
@@ -8,12 +10,14 @@ class ApplicationController < ActionController::Base
   def configure_permitted_parameters
     if resource_class == User
       devise_parameter_sanitizer.permit(:sign_up, keys: %i[name])
+      devise_parameter_sanitizer.permit(:account_update, keys: %i[name profile])
     elsif resource_class == Studio
       devise_parameter_sanitizer.permit(:sign_up, keys: %i[name])
     else
       super
     end
   end
+
 
   def logged_in?
     !!current_studio
@@ -28,7 +32,7 @@ class ApplicationController < ActionController::Base
   def authenticate
     return if logged_in?
 
-    redirect_to root_path, alert:'ログインしてください'
+    redirect_to root_path, alert: 'ログインしてください'
   end
 
 end
