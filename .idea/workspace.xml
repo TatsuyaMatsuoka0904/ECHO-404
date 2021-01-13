@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2c30507-8c2a-406b-a3bf-3e6ed281e59f" name="デフォルト変更リスト" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/events/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/studios/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/studios/registrations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/events/create.js.erb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/rooms/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rooms/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/studios/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studios/registrations/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +73,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210113_0002" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210114_0001" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -206,7 +210,9 @@
       <workItem from="1610159726304" duration="10068000" />
       <workItem from="1610279389732" duration="295000" />
       <workItem from="1610331293031" duration="41248000" />
-      <workItem from="1610474710291" duration="2861000" />
+      <workItem from="1610474710291" duration="3985000" />
+      <workItem from="1610505306730" duration="3314000" />
+      <workItem from="1610561232234" duration="1630000" />
     </task>
     <task id="LOCAL-00001" summary="git dev push">
       <created>1610337281659</created>
@@ -243,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610477044399</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="#5[studio_edit機能追加]">
+      <created>1610478694275</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610478694275</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +268,7 @@
     <MESSAGE value="#3[チャット機能右側吹き出し]" />
     <MESSAGE value="#3[event作成機能追加]" />
     <MESSAGE value="#4[user_edit機能追加]" />
-    <option name="LAST_COMMIT_MESSAGE" value="#4[user_edit機能追加]" />
+    <MESSAGE value="#5[studio_edit機能追加]" />
+    <option name="LAST_COMMIT_MESSAGE" value="#5[studio_edit機能追加]" />
   </component>
 </project>

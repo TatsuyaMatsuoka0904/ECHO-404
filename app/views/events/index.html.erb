@@ -1,0 +1,14 @@
+<h3>イベント一覧</h3>
+
+<div class="list-group">
+  <% @events.each do |e| %>
+    <tr>
+      <td>
+        <%= e.name %>
+      </td>
+      <td>
+        <%= e.start_at %>
+      </td>
+    </tr>
+  <% end %>
+</div>

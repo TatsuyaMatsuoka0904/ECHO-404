@@ -1,6 +1,6 @@
 <div class="container-fluid">
-  <div class="row">
 
+  <div class="row">
     <% if user_signed_in? %>
     <h4 id="room" data-room="<%= @room.id %>" data-user="<%= current_user.id %>"><%= @studio.name %> さんとのチャット</h4>
       <div class="chat-field">
@@ -23,14 +23,16 @@
             </div>
           <% end %>
         <% end %>
+      </div>
+      </div>
 
-
+      <div class="row">
     <% elsif studio_signed_in?%>
       <h4 id="room" data-room="<%= @room.id %>" data-user="<%= current_studio.id %>"><%= @user.name %> さんとのチャット</h4>
       <div class="chat-field">
         <% @messages.each do |m| %>
           <% if m.is_user %>
-            <div class="col-md-5 .text-nowrap">
+            <div class="col-md-7 .text-nowrap">
               <div class="left-message">
                 <div class="balloon2">
                   <p style="text-align: left;"><%= m.content %></p>
@@ -38,7 +40,7 @@
               </div>
             </div>
           <% else %>
-            <div class="col-md-5 .text-nowrap">
+            <div class="col-md-7 .text-nowrap">
               <div class="right-message">
                 <div class="balloon1">
                 <p style="text-align: left;"><%= m.content %></p>
@@ -46,9 +48,11 @@
               </div>
             </div>
           <% end %>
-        <% end %>
+      <% end %>
       </div>
     <% end %>
+    </div>
+    <div class="row">
 
     <%= form_with model:[@room, @message] do |f| %>
       <%= f.text_field :content %>
@@ -56,4 +60,3 @@
     <% end %>
     </div>
   </div>
-</div>
