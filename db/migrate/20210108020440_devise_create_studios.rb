@@ -33,6 +33,9 @@ class DeviseCreateStudios < ActiveRecord::Migration[5.2]
       # t.datetime :locked_at
 
       t.string :name
+      t.string :address
+      t.string :studio_image
+      t.string :tel
 
       t.timestamps null: false
     end
