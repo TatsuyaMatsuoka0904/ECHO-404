@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2c30507-8c2a-406b-a3bf-3e6ed281e59f" name="デフォルト変更リスト" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/rooms/create.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/studios/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/homes/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/rooms/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rooms/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/studios/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studios/registrations/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/registrations/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/registrations/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20210108020440_devise_create_studios.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20210108020440_devise_create_studios.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +71,7 @@
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
@@ -218,7 +218,7 @@
       <workItem from="1610474710291" duration="3985000" />
       <workItem from="1610505306730" duration="3314000" />
       <workItem from="1610561232234" duration="3405000" />
-      <workItem from="1610605339075" duration="5269000" />
+      <workItem from="1610605339075" duration="7923000" />
     </task>
     <task id="LOCAL-00001" summary="git dev push">
       <created>1610337281659</created>
@@ -276,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610612310791</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="#8[スタジオ一覧追加]">
+      <created>1610614204479</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610614204479</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +298,7 @@
     <MESSAGE value="#5[studio_edit機能追加]" />
     <MESSAGE value="#6[event_index機能追加]" />
     <MESSAGE value="#7[routes再検討]" />
-    <option name="LAST_COMMIT_MESSAGE" value="#7[routes再検討]" />
+    <MESSAGE value="#8[スタジオ一覧追加]" />
+    <option name="LAST_COMMIT_MESSAGE" value="#8[スタジオ一覧追加]" />
   </component>
 </project>
