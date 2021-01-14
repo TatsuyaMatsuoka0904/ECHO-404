@@ -1,0 +1,14 @@
+<h3>スタジオ一覧</h3>
+
+<div class="list-group">
+  <% @studios.each do |s| %>
+    <tr>
+      <td>
+        <%= s.name %>
+      </td>
+      <td>
+        <%#= s.mail %>
+      </td>
+    </tr>
+  <% end %>
+</div>
