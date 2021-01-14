@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to:'homes#index'
   get 'studios/show'
+  get '/rooms' => 'rooms#index'
   get 'rooms/show'
   resources :events
   devise_for :studios
