@@ -1,24 +1,32 @@
-# README
+# ECHOー404
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+出演者、ライブハウスが予約や打ち合わせをでき、ゲストが出演情報を確認できるサイト
 
-Things you may want to cover:
+### サイトテーマ
+アーティストがライブ情報を発信しています。ですが、好きなアーティストが増えていくにつれ、アーティスト、運営が自由にライブ情報を投稿でき、共有できるアプリケーションを作成しました。
 
-* Ruby version
+### テーマを選んだ理由
+昨今のコロナの影響により、ライブ業界が苦しい状況になっています。出演者も知らない間に、店を閉めていたり、
+アーティスト活動出来なくなって夢を諦める人が多くなっています。そんな中でも、ライブハウスとアーティストがしっかりと連絡を取れて、
+その情報がしっかりとファンに伝えることが出来たらいいなと思いました。日本のイベント文化に寄与出来れば嬉しいです。
 
-* System dependencies
+### ターゲットユーザ
+ライブが好きな人や、運営者様がた
 
-* Configuration
+### 主な利用シーン
+ライブの出演予約や打ち合わせ、また、情報の発信。
 
-* Database creation
+## 設計書
 
-* Database initialization
 
-* How to run the test suite
+## 機能一覧
+https://docs.google.com/spreadsheets/d/1l3246PXbQ2gK5sjSfoYoptH6uMfXSybb3LHrF-7ZCe0/edit?usp=sharing
 
-* Services (job queues, cache servers, search engines, etc.)
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
 
-* Deployment instructions
-
-* ...
