@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2021_01_12_020303) do
     t.datetime "start_at", null: false
     t.datetime "end_at", null: false
     t.text "content", null: false
+    t.string "performer", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["studio_id"], name: "index_events_on_studio_id"

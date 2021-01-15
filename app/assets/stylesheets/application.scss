@@ -16,83 +16,130 @@
 @import "bootstrap";
 @import "summernote-bs4";
 
-.left-message{
-  text-align: left;
-
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 13px;
 }
 
-.right-message{
-  text-align: right;
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+  padding: 10px 50px 0px 50px;
 }
 
-
-.body{
-  background-color:white;
-  font: 'メイリオ';
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
 }
 
-//右側コメントCSS
-.balloon1:before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 8%;
-  left: 100%;
-  margin-left: -15px;
-  border: 10px solid transparent;
-  border-top: 15px solid #87c0cd;
-  text-align: left;
-}
-.balloon1 {
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  margin: 1em 0;
-  padding: 7px 10px;
-  min-width: 12px;
-  max-width: 100%;
-  color: #555;
-  font-size: 16px;
-  background: #87c0cd;
-  border-radius: 15px;
+a {
+  color: white;
+
+  &:visited {
+    color: #666;
+  }
+
+  &:hover {
+    color: lightsalmon;
+  }
 }
 
 
-.balloon1 p {
-  position: relative;
-  z-index: 0;
-  margin: 0;
-  padding: 0;
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
 }
 
-
-//左側コメント
-.balloon2:before {
-  content: "";
-  position: absolute;
-  top: 10%;
-  right: 97%;
-  margin-right: -15px;
-  border: 10px solid transparent;
-  border-top: 15px solid gainsboro;
+#notice {
+  color: green;
 }
 
-.balloon2 {
-  position: relative;
-  display: inline-block;
-  margin: 1em 0;
-  padding: 7px 10px;
-  min-width: 1px;
-  max-width: 100%;
-  color: #555;
-  font-size: 16px;
-  background: gainsboro;
-  border-radius: 15px;
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
 }
 
-.balloon2 p {
-  position: relative;
-  z-index: 0;
-  margin: 0;
-  padding: 0;
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px -7px 0;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+    padding: 12px;
+  }
+}
+
+label {
+  display: block;
+}
+
+input[type="text"] {
+  width: 300px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+input[type="text"]:focus {
+  border-color: salmon;
+  box-shadow: 0 0 8px 0 salmon;
+}
+
+input[type="password"] {
+  width: 300px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+input[type="password"]:focus {
+  border-color: salmon;
+  box-shadow: 0 0 8px 0 salmon;
+}
+
+input[type="email"] {
+  width: 300px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+input[type="email"]:focus {
+  border-color: salmon;
+  box-shadow: 0 0 8px 0 salmon;
+}
+
+.form-label{
+
 }
