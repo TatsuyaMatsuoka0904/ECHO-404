@@ -1,0 +1,27 @@
+- now = Time.zone.now
+.container
+  .row
+    h3.mt-2 イベント作成
+= form_with model:@event, class:"form-horizontal" do |f|
+  .form-group
+    h6 イベント名
+    = f.text_field :name,class:"form-control"
+  .form-group
+    h6 イベント会場
+    = f.text_field :place,class:"form-control"
+  .form-group
+    h6 開催日時
+    div
+      = f.datetime_select :start_at,start_year: now.year,end_year: now.year+1
+  .form-group
+    h6 終了日時
+    div
+      = f.datetime_select :end_at,start_year: now.year,end_year: now.year+1
+  .form-group
+    h6 出演者
+    = f.text_area :performer, class: "form-control", row: 10
+  .form-group
+    h6 詳細
+    = f.text_area :content,class:"form-control",row: 10
+  .btn
+  = f.submit class:"btn btn-border"
