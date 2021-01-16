@@ -83,3 +83,4 @@ gem 'simple_calendar'
 gem 'simple_form'
 gem 'slim-rails'
 gem 'summernote-rails'
+gem "geocoder"

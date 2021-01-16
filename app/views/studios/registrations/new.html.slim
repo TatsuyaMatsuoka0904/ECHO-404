@@ -1,0 +1,28 @@
+.container
+  .row
+    h2.header-background.col-xs-3.col-xs-offset-2 スタジオ登録
+  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+    = render "devise/shared/error_messages", resource: resource
+    .row
+      .form-label.col-xs-2.col-xs-offset-2
+        = f.text_field :name, autofocus: true, autocomplete: "firstname",placeholder:"Studio Name"
+    .row
+      .form-label.col-xs-2.col-xs-offset-2
+        = f.text_field :email,autofocus: true, autocomplete: "email",placeholder:"Email"
+    .row
+      .form-label.col-xs-2.col-xs-offset-2
+        = f.text_field :address,autofocus: true, autocomplete: "address",placeholder:"Address"
+    .row
+      .form-label.col-xs-2.col-xs-offset-2
+        = f.text_field :postal_code,autofocus: true, autocomplete: "postal_code",placeholder:"Postal Code"
+    .row
+      .form-label.col-xs-2.col-xs-offset-2
+        = f.password_field :password,autofocus: true, autocomplete: "new-password",placeholder:"Password"
+        = f.label :"パスワード(6文字以上)"
+    .row
+      .form-label.col-xs-2.col-xs-offset-2
+        = f.password_field :password,autofocus: true, autocomplete: "new-password",placeholder:"Once Again"
+        = f.label :"パスワード(確認用)"
+    .row
+      .col-xs-4.col-xs-offset-4
+        = f.submit "新規登録", class: "btn btn-border btn-block"

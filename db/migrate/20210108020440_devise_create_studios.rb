@@ -36,6 +36,9 @@ class DeviseCreateStudios < ActiveRecord::Migration[5.2]
       t.string :address
       t.string :studio_image
       t.string :tel
+      t.string :postal_code
+      t.float :latitude
+      t.float :longitude
 
       t.timestamps null: false
     end
