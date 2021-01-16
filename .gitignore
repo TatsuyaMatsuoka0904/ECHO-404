@@ -6,21 +6,21 @@
 
 # Ignore bundler config.
 /.bundle
-
+/.env
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
-
+/.env
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+/.env
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
-
+/.env
 /node_modules
 /yarn-error.log
 
@@ -28,6 +28,7 @@
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
-/config/master.key
 /.env
+/config/master.key
+
 
