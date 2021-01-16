@@ -68,7 +68,9 @@ gem 'coderay'
 gem 'devise'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
+gem "dotenv-rails"
 gem 'fullcalendar-rails'
+gem "geocoder"
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'kaminari'
@@ -83,5 +85,3 @@ gem 'simple_calendar'
 gem 'simple_form'
 gem 'slim-rails'
 gem 'summernote-rails'
-gem "geocoder"
-gem "dotenv-rails"
