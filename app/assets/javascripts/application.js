@@ -17,4 +17,58 @@
 //= require summernote/summernote-bs4.min
 //= require activestorage
 //= require turbolinks
+//= require moment
+//= require fullcalendar
 //= require_tree .
+
+$(function () {
+    $(document).on('turbolinks:load', function () {
+        if ($('#calendar').length) {
+
+            function Calendar() {
+                return $('#calendar').fullCalendar({
+                });
+            }
+            function clearCalendar() {
+                $('#calendar').html('');
+            }
+
+            $(document).on('turbolinks:load', function () {
+                Calendar();
+            });
+            $(document).on('turbolinks:before-cache', clearCalendar);
+
+            //events: '/events.json', 以下に追加
+            $('#calendar').fullCalendar({
+                events: '/events.json',
+                //カレンダー上部を年月で表示させる
+                titleFormat: 'YYYY年 M月',
+                dayNamesShort: ['日', '月', '火', '水', '木', '金', '土'],
+                header: {
+                    left: '',
+                    center: 'title',
+                    right: 'today prev,next'
+                },
+                defaultTimedEventDuration: '03:00:00',
+                buttonText: {
+                    prev: '前',
+                    next: '次',
+                    prevYear: '前年',
+                    nextYear: '翌年',
+                    today: '今日',
+                    month: '月',
+                    week: '週',
+                    day: '日'
+                },
+                editable: true,
+                timeFormat: "HH:mm",
+                eventColor: '#87cefa',
+                eventTextColor: '#000000',
+                eventRender: function(event, element) {
+                    element.css("font-size", "0.8em");
+                    element.css("padding", "5px");
+                }
+            });
+        }
+    });
+});
