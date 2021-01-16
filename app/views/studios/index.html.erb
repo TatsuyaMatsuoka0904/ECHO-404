@@ -1,10 +1,9 @@
 <h3>スタジオ一覧</h3>
-
 <div class="list-group">
   <% @studios.each do |s| %>
     <tr>
       <td>
-        <%= s.name %>
+        <%= link_to s.name, studios_show_path %>
       </td>
       <td>
         <%#= s.mail %>

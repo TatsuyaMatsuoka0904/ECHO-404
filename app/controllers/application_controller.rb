@@ -10,9 +10,10 @@ class ApplicationController < ActionController::Base
   def configure_permitted_parameters
     if resource_class == User
       devise_parameter_sanitizer.permit(:sign_up, keys: %i[name])
-      devise_parameter_sanitizer.permit(:account_update, keys: %i[name profile])
+      devise_parameter_sanitizer.permit(:account_update, keys: %i[name profile address postal_code tel])
     elsif resource_class == Studio
-      devise_parameter_sanitizer.permit(:sign_up, keys: %i[name])
+      devise_parameter_sanitizer.permit(:sign_up, keys: %i[name address postal_code])
+      devise_parameter_sanitizer.permit(:account_update, keys: %i[name profile address postal_code tel])
     else
       super
     end
