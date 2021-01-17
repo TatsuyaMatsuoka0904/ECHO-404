@@ -2,7 +2,8 @@
   <h1>ようこそ<%= current_studio.name %>さん</h1>
   <p>名前：<%= current_studio.name %></p>
   <p>登録email：<%= current_studio.email %></p>
-  <P>住所: <%= @studio.address %></P>
+
+
   <script type="text/javascript">
       function initMap() {
           var test ={lat: <%= @studio.latitude %>, lng: <%= @studio.longitude %>};
@@ -31,7 +32,7 @@
   </script>
 
   <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAP_API_KEY'] %>&callback=initMap">
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwtbkM27S2hewJZiGEOeiN2yPFAn2urzc&callback=initMap">
   </script>
   <style type="text/css">
       #map { height: 200px;
@@ -39,56 +40,57 @@
   </style>
 
   <div id="map"></div>
-<!--  <P>プロフィール : <%#= current_studio.profile %></P>-->
   <br>
   アカウントを編集しますか？
   <%= link_to "はい", edit_studio_registration_path %>
   <br>
   ログアウトしますか？
   <%= link_to "はい", destroy_studio_session_path, method: :delete %>
+
 <% else %>
+
   <h2>ここは<%= @studio.name %>さんのページです</h2>
   <p>名前：<%= @studio.name %></p>
   <p>登録email：<%= @studio.email %></p>
-<!--  <p>プロフィール : <%#= @studio.profile %></p>-->
+
+
+  <script type="text/javascript">
+      function initMap() {
+          var test ={lat: <%= @studio.latitude %>, lng: <%= @studio.longitude %>};
+          var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: test
+          });
+          var transitLayer = new google.maps.TransitLayer();
+          transitLayer.setMap(map);
+
+          var contentString = '住所：<%= @studio.address %>';
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString
+          });
+
+          var marker = new google.maps.Marker({
+              position:test,
+              map: map,
+              title: contentString
+          });
+
+          marker.addListener('click', function() {
+              infowindow.open(map, marker);
+          });
+      }
+  </script>
+
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwtbkM27S2hewJZiGEOeiN2yPFAn2urzc&callback=initMap">
+  </script>
+  <style type="text/css">
+      #map { height: 200px;
+          width: 70%;}
+  </style>
+
+  <div id="map"></div>
 <% end %>
 
 
-
-<script type="text/javascript">
-    function initMap() {
-        var test ={lat: <%= @studio.latitude %>, lng: <%= @studio.longitude %>};
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
-            center: test
-        });
-        var transitLayer = new google.maps.TransitLayer();
-        transitLayer.setMap(map);
-
-        var contentString = '住所：<%= @studio.address %>';
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-
-        var marker = new google.maps.Marker({
-            position:test,
-            map: map,
-            title: contentString
-        });
-
-        marker.addListener('click', function() {
-            infowindow.open(map, marker);
-        });
-    }
-</script>
-
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAP_API_KEY'] %>&callback=initMap">
-</script>
-<style type="text/css">
-    #map { height: 200px;
-        width: 70%;}
-</style>
-
-<div id="map"></div>
 
