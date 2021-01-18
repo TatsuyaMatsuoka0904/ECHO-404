@@ -1,11 +1,6 @@
 class StudiosController < ApplicationController
   def show
-    @studio = current_studio
-    # results = Geocoder.search(params[:address])
-    # @latlng = results.first
-    # respond_to do |format|
-    #   format.js
-    # end
+    @studio = Studio.find(params[:id])
   end
 
   def index

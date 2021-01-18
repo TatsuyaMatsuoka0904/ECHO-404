@@ -1,8 +1,3 @@
-/ <%#= link_to "チャットルーム", rooms_path %>
-/ <%#= link_to "イベント一覧", events_path %>
-/ <%#= link_to "スタジオ一覧", studios_path %>
-/
-
 .container
   .head_title.center-block
     h2 ライブ情報一覧
@@ -18,3 +13,4 @@
                 h3.event_title= link_to event.name, event_path(event)
                 .event_info_detail
                   p = event.place
+

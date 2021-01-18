@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_12_020303) do
+ActiveRecord::Schema.define(version: 2021_01_18_035514) do
 
   create_table "events", force: :cascade do |t|
     t.bigint "studio_id"
@@ -50,15 +50,17 @@ ActiveRecord::Schema.define(version: 2021_01_12_020303) do
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.string "name"
-    t.string "address"
     t.string "studio_image"
     t.string "tel"
     t.string "postal_code"
-    t.float "latitude"
-    t.float "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "address"
+    t.float "latitude"
+    t.float "longitude"
     t.index ["email"], name: "index_studios_on_email", unique: true
+    t.index ["latitude"], name: "index_studios_on_latitude"
+    t.index ["longitude"], name: "index_studios_on_longitude"
     t.index ["reset_password_token"], name: "index_studios_on_reset_password_token", unique: true
   end
 

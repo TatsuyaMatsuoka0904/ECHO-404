@@ -2,71 +2,79 @@ body
   header.navbar-dark.bg-dark
     .navbar.navbar-expand-lg
       .container
-        .header-name
-        = link_to "ECHO - 404", root_path, class:"navbar bg-dark"
+        = link_to root_path
+          h5 ECHO-404
         button.navbar-toggler.collapsed aria-controls="navbarNavDropdown" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarNavDropdown" data-toggle="collapse" type="button"
           span.navbar-toggler-icon
         #navbarNavDropdown.navbar-collapse.collapse
           ul.navbar-nav.ml-auto
-            - if current_user
-            li
-              = link_to events_path do
+            - if user_signed_in?
+              li= link_to user_path(current_user) do
+                .header-item
+                  span.header-icon
+                    i.fa.fa-search
+                      p MY BAND
+              li= link_to events_path do
                 .header-item
                   span.header-icon
                     i.fa.fa-search
                       p EVENTS
-                li
-                  = link_to users_show_path(current_user) do
-                    .header-item
-                      span.header-icon
-                        i.fa.fa-user
-                      p MY PAGE
-                li
-                  = link_to new_event_path do
-                    .header-item
-                      span.header-icon
-                        i.fa.fa-pencil
-                      p ADD EVENT
-                li
-                  = link_to destroy_user_session_path, method: :delete do
-                    .header-item
-                      span.header-icon
-                        i.fa.fa-sign-out
-                      p LOG OUT
-                li
-                  = link_to rooms_path do
-                    .header-item
-                      span.header-icon
-                        i.fa.fa-envelope-o
+              li= link_to rooms_path do
+                .header-item
+                  span.header-icon
+                    i.fa.fa-search
                       p CONTACT
-            - if current_studio
-              li
-                = link_to events_path do
-                  .header-item
-                    span.header-icon
-                      i.fa.fa-search
-                    p EVENTS
-              li
-                = link_to new_event_path do
-                  .header-item
-                    span.header-icon
-                      i.fa.fa-pencil
-                    p ADD EVENT
-              li
-                = link_to new_user_registration_path do
-                  .header-item
-                    span.header-icon
-                      i.fa.fa-user-plus
-                    p SIGN UP
-              li
-                = link_to new_user_session_path do
-                  .header-item
-                    span.header-icon
-                      i.fa.fa-sign-in
-                    p LOG IN
-              li
-                = link_to rooms_path do
-                  .header-item
-                    span.header-icon
-                      i.fa.fa-envelope-o
-                    p CONTACT
+              li= link_to studios_path do
+                .header-item
+                  span.header-icon
+                    i.fa.fa-search
+                      p STUDIOS
+              li= link_to destroy_user_session_path, method: :delete  do
+                .header-item
+                  span.header-icon
+                    i.fa.fa-search
+                      p LOG OUT
+
+            - elsif studio_signed_in?
+              li= link_to studio_path(current_studio) do
+                .header-item
+                  span.header-icon
+                    i.fa.fa-search
+                      p MY HOUSE
+              li= link_to events_path do
+                .header-item
+                  span.header-icon
+                    i.fa.fa-search
+                      p EVENTS
+              li= link_to new_event_path do
+                .header-item
+                  span.header-icon
+                    i.fa.fa-search
+                      p ADD EVENTS
+              li= link_to rooms_path do
+                .header-item
+                  span.header-icon
+                    i.fa.fa-search
+                      p CONTACT
+              li= link_to destroy_studio_session_path, method: :delete  do
+                .header-item
+                  span.header-icon
+                    i.fa.fa-search
+                      p LOG OUT
+
+            -else
+              li= link_to events_path do
+                .header-item
+                  span.header-icon
+                    i.fa.fa-search
+                      p EVENTS
+              li= link_to studios_path do
+                .header-item
+                  span.header-icon
+                    i.fa.fa-search
+                      p STUDIOS
+              li= link_to rooms_path do
+                .header-item
+                  span.header-icon
+                    i.fa.fa-search
+                      p LOG IN / SIGN UP
