@@ -1,13 +1,23 @@
 Rails.application.routes.draw do
   root to:'homes#index'
-  get 'studios/show'
-  get '/studios' => 'studios#index'
   get '/rooms' => 'rooms#index'
   get 'rooms/show'
   resources :events
-  devise_for :studios
-  devise_for :users
-  get 'users/show' => 'users#show'
+
+  devise_for :users, :controllers => {
+    :sessions      => "users/sessions",
+    :registrations => "users/registrations",
+    :passwords     => "users/passwords",
+  }
+  resources :users, :only => [:index, :show]
+
+  devise_for :studios, controllers: {
+    sessions: "studios/sessions",
+    registrations: "studios/registrations",
+    passwords: "studios/passwords",
+  }
+  resources :studios, only: %i[index show]
+
   resources :rooms, only: %i[show create] do
     resources :messages, only: [:create]
   end

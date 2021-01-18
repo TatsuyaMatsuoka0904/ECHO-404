@@ -3,7 +3,7 @@
   <component name="GitScope">
     <option name="repositoryTargetBranchMap">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="origin/main" />
       </map>
     </option>
   </component>

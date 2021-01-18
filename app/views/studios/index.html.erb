@@ -3,7 +3,7 @@
   <% @studios.each do |s| %>
     <tr>
       <td>
-        <%= link_to s.name, studios_show_path %>
+        <%= link_to s.name, studio_path(s) %>
       </td>
       <td>
         <%#= s.mail %>

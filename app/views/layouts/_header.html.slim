@@ -9,7 +9,7 @@ body
         #navbarNavDropdown.navbar-collapse.collapse
           ul.navbar-nav.ml-auto
             - if user_signed_in?
-              li= link_to users_show_path(current_user) do
+              li= link_to user_path(current_user) do
                 .header-item
                   span.header-icon
                     i.fa.fa-search
@@ -34,8 +34,9 @@ body
                   span.header-icon
                     i.fa.fa-search
                       p LOG OUT
+
             - elsif studio_signed_in?
-              li= link_to studios_show_path(current_studio) do
+              li= link_to studio_path(current_studio) do
                 .header-item
                   span.header-icon
                     i.fa.fa-search
@@ -60,6 +61,7 @@ body
                   span.header-icon
                     i.fa.fa-search
                       p LOG OUT
+
             -else
               li= link_to events_path do
                 .header-item

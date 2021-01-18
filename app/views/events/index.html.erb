@@ -1,18 +1,19 @@
 <h3>イベント一覧</h3>
-
-<div class="list-group">
+<div class="called">
+  <div id="calendar"></div>
+</div>
+<div class="list-up">
   <% @events.each do |e| %>
     <tr>
       <td>
-        <%= e.name %>
+        <%= link_to e.name,event_path(e)%>
       </td>
       <td>
-        <%= e.start_at %>
+        <%= e.start_at.strftime('%Y年%m月%d日 %H時%M分') %>~
+      </td>
+      <td>
+        <%= e.end_at.strftime('%Y年%m月%d日 %H時%M分') %>
       </td>
     </tr>
   <% end %>
-</div>
-
-<div class="called">
-  <div id="calendar"></div>
 </div>
