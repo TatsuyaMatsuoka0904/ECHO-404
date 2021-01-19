@@ -39,8 +39,6 @@ class DeviseCreateStudios < ActiveRecord::Migration[5.2]
 
       t.timestamps null: false
     end
-    add_index :studios, :latitude
-    add_index :studios, :longitude
     add_index :studios, :email,                unique: true
     add_index :studios, :reset_password_token, unique: true
     # add_index :studios, :confirmation_token,   unique: true

@@ -59,8 +59,6 @@ ActiveRecord::Schema.define(version: 2021_01_18_035514) do
     t.float "latitude"
     t.float "longitude"
     t.index ["email"], name: "index_studios_on_email", unique: true
-    t.index ["latitude"], name: "index_studios_on_latitude"
-    t.index ["longitude"], name: "index_studios_on_longitude"
     t.index ["reset_password_token"], name: "index_studios_on_reset_password_token", unique: true
   end
 

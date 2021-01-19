@@ -2,8 +2,16 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="development" uuid="98499ec3-14d9-4be2-9ec0-4ae12f931561">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
+      <database-info product="SQLite" version="3.34.0" jdbc-version="2.1" driver-name="SQLite JDBC" driver-version="3.34.0" dbms="SQLITE" exact-version="3.34.0" exact-driver-version="3.34">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <auth-provider>no-auth</auth-provider>
+      <schema-mapping />
+    </data-source>
+    <data-source name="MySQL - @localhost" uuid="5bf57f46-3d8a-43a5-a3b4-f6853fb9b46d">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
       <schema-mapping />
     </data-source>
   </component>
