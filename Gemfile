@@ -85,4 +85,8 @@ gem 'simple_calendar'
 gem 'simple_form'
 gem 'slim-rails'
 gem 'summernote-rails'
-gem 'gon'
+
+gem 'dotenv-rails'
+group :production do
+  gem 'mysql2'
+end
