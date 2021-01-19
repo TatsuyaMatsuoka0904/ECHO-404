@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2c30507-8c2a-406b-a3bf-3e6ed281e59f" name="デフォルト変更リスト" comment="">
+    <list default="true" id="f2c30507-8c2a-406b-a3bf-3e6ed281e59f" name="デフォルト変更リスト" comment="#15[depploy追加]">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/echo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/echo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,9 +77,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mongo&#10;mysql" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -81,7 +89,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210119_0001" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210119_0008" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -227,7 +235,11 @@
       <workItem from="1610870137114" duration="12836000" />
       <workItem from="1610923731475" duration="17749000" />
       <workItem from="1610945805438" duration="4725000" />
-      <workItem from="1610998665571" duration="2773000" />
+      <workItem from="1610998665571" duration="3265000" />
+      <workItem from="1611031264774" duration="1901000" />
+      <workItem from="1611035620704" duration="1744000" />
+      <workItem from="1611063678520" duration="85000" />
+      <workItem from="1611067827727" duration="825000" />
     </task>
     <task id="LOCAL-00001" summary="git dev push">
       <created>1610337281659</created>
@@ -376,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611004703526</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="#15[depploy追加]">
+      <created>1611021734447</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1611021734447</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="54.178.13.179" id="c437f5fe-4be8-4024-9be3-1b1c7d874ed5" keyPath="$USER_HOME$/Desktop/practice-aws.pem" port="22" nameFormat="DESCRIPTIVE" username="ec2-user" />
+    </configs>
+  </component>
+</project>
