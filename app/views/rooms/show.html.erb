@@ -1,67 +1,67 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-6">
-    <% if user_signed_in? %>
-    <h4 id="room" data-room="<%= @room.id %>" data-user="<%= current_user.id %>"><%= @studio.name %> さんとのチャット</h4>
-      <div class="chat-field">
-        <% @messages.each do |m| %>
-          <% if m.is_user %>
-            <div class="col-xs-9 .text-nowrap">
-            <div class="right-message">
-              <div class="balloon1">
-                <p style="text-align: left;"><%= m.content %></p>
-              </div>
-            </div>
-          </div>
-          <% else %>
-            <div class="col-xs-9 .text-nowrap">
-              <div class="left-message">
-                <div class="balloon2">
-                  <p style="text-align: left;"><%= m.content %></p>
+      <% if user_signed_in? %>
+        <h4 id="room" data-room="<%= @room.id %>" data-user="<%= current_user.id %>"><%= @studio.name %> さんとのチャット</h4>
+        <div class="chat-field">
+          <% @messages.each do |m| %>
+            <% if m.is_user %>
+              <div class="col-xs-9 .text-nowrap">
+                <div class="right-message">
+                  <div class="balloon1">
+                    <p style="text-align: left;"><%= m.content %></p>
+                  </div>
                 </div>
               </div>
-            </div>
+            <% else %>
+              <div class="col-xs-9 .text-nowrap">
+                <div class="left-message">
+                  <div class="balloon2">
+                    <p style="text-align: left;"><%= m.content %></p>
+                  </div>
+                </div>
+              </div>
+            <% end %>
           <% end %>
-        <% end %>
-      </div>
+        </div>
         </div>
         </div>
 
         <div class="row">
           <div class="col-xs-6">
-    <% elsif studio_signed_in?%>
-      <h4 id="room" data-room="<%= @room.id %>" data-user="<%= current_studio.id %>"><%= @user.name %> さんとのチャット</h4>
-      <div class="chat-field">
-        <% @messages.each do |m| %>
-          <% if m.is_user %>
-            <div class="col-md-7 .text-nowrap">
-              <div class="left-message">
-                <div class="balloon2">
-                  <p style="text-align: left;"><%= m.content %></p>
+      <% elsif studio_signed_in?%>
+        <h4 id="room" data-room="<%= @room.id %>" data-user="<%= current_studio.id %>"><%= @user.name %> さんとのチャット</h4>
+        <div class="chat-field">
+          <% @messages.each do |m| %>
+            <% if m.is_user %>
+              <div class="col-md-7 .text-nowrap">
+                <div class="left-message">
+                  <div class="balloon2">
+                    <p style="text-align: left;"><%= m.content %></p>
+                  </div>
                 </div>
               </div>
-            </div>
-          <% else %>
-            <div class="col-md-7 .text-nowrap">
-              <div class="right-message">
-                <div class="balloon1">
-                <p style="text-align: left;"><%= m.content %></p>
+            <% else %>
+              <div class="col-md-7 .text-nowrap">
+                <div class="right-message">
+                  <div class="balloon1">
+                    <p style="text-align: left;"><%= m.content %></p>
+                  </div>
                 </div>
               </div>
-            </div>
+            <% end %>
           <% end %>
+        </div>
       <% end %>
       </div>
-    <% end %>
-    </div>
 
-    <div class="row">
-      <div class="col-md-12 .text-nowrap">
-    <%= form_with model:[@room, @message] do |f| %>
-      <%= f.text_field :content %>
-      <%= f.submit "送信"%>
-    <% end %>
+      <div class="row">
+        <div class="col-md-12 .text-nowrap">
+          <%= form_with model:[@room, @message] do |f| %>
+            <%= f.text_field :content %>
+            <%= f.submit "送信"%>
+          <% end %>
+        </div>
       </div>
-    </div>
-  </div>
+      </div>
       </div>

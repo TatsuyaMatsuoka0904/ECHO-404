@@ -16,7 +16,7 @@
 //= require bootstrap
 //= require summernote/summernote-bs4.min
 //= require activestorage
-// require turbolinks
+//= require turbolinks
 //= require moment
 //= require fullcalendar
 //= require_tree .

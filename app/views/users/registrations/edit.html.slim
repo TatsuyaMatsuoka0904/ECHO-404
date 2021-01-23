@@ -1,31 +1,24 @@
-.container
-  .row
-    .col-2
-      h1 アカウント編集
-  .row
-    .col-2
-      = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
-        .form-group
-          img#img_prev.hidden/
-          = image_tag current_user.image_id.to_s, class: 'image_id'
-          = f.file_field :image_id, id: 'image_id'
-        .form-group
-          = f.label :バンドネーム
-          = f.text_field :name, autofocus: true, autocomplete: 'name', class: 'form-control'
-        .form-group
-          = f.label :プロフィール
-          = f.text_field :profile, autofocus: true, autocomplete: 'profile', class: 'form-control'
-        .form-group
-          = f.label :メールアドレス
-          = f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control'
-        .form-group
-          = f.label :password
-          = f.password_field :password, autocomplete: 'new-password', class: 'form-control'
-        .form-group
-          = f.label :password_confirmation
-          = f.password_field :password_confirmation, autocomplete: 'new-password', class: 'form-control mb-4'
-        .form-btn
-          = f.submit "編集完了", class: "btn btn-border btn-block"
-      hr.devise-link.my-12/
-      .form-btn
-        = link_to "トップページ", root_path, class: 'btn btn-info btn-block'
+.title
+  h2 アカウント編集
+= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+  .form-group
+    img#img_prev.hidden
+    = image_tag current_user.image_id.to_s, class: 'image_id'
+    = f.file_field :image_id, id: 'image_id'
+  .form-group
+    = f.label :バンドネーム
+    = f.text_field :name, autofocus: true, autocomplete: 'name', class: 'form-control'
+  .form-group
+    = f.label :プロフィール
+    = f.text_field :profile, autofocus: true, autocomplete: 'profile', class: 'form-control'
+  .form-group
+    = f.label :メールアドレス
+    = f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control'
+  .form-group
+    = f.label :password
+    = f.password_field :password, autocomplete: 'new-password', class: 'form-control'
+  .form-group
+    = f.label :password_confirmation
+    = f.password_field :password_confirmation, autocomplete: 'new-password', class: 'form-control mb-4'
+  .form-btn
+    = f.submit "編集完了", class: "btn btn-border btn-block"

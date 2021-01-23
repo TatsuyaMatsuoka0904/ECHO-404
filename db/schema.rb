@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_18_035514) do
+ActiveRecord::Schema.define(version: 2021_01_23_072615) do
 
   create_table "events", force: :cascade do |t|
     t.bigint "studio_id"
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 2021_01_18_035514) do
     t.string "address"
     t.float "latitude"
     t.float "longitude"
+    t.string "image_id"
     t.index ["email"], name: "index_studios_on_email", unique: true
     t.index ["reset_password_token"], name: "index_studios_on_reset_password_token", unique: true
   end

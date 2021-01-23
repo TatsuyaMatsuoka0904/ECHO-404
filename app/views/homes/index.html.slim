@@ -1,6 +1,5 @@
 .container
   .head_title.center-block
-    h2 ライブ情報一覧
     - if @events.count > 0
       - @events.each do |event|
         .event_list

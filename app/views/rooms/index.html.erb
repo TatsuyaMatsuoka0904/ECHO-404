@@ -1,0 +1,57 @@
+<% if user_signed_in? %>
+  <h3>スタジオ一覧</h3>
+  <div class="card-columns" style="width:60rem">
+    <% @studios.each do |studio| %>
+      <div class="card">
+        <%= attachment_image_tag studio, :image, format: "jpg",fallback: "no_image.jpg", size: "300x180" %>
+        <div class="card-body">
+          <h5 class="card-title"><%= link_to studio.name, studio_path(studio) %></h5>
+          <p class="card-text"><%= studio.address %></p>
+          <% if @studio_ids.include?(studio.id) %>
+            <p class="card-text"><%= link_to "チャットへ", room_path(current_user.rooms.find_by(studio_id: studio.id)) %></p>
+          <% else %>
+            <%= form_for Room.new do |f| %>
+              <%= f.hidden_field :studio_id, :value => studio.id %>
+              <%= f.submit "チャットを始める" %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+    </div>
+
+<% elsif studio_signed_in? %>
+  <h2>ユーザー一覧</h2>
+  <div class="card-columns" style="width:60rem">
+    <% @users.each do |user| %>
+      <div class="card">
+        <%= attachment_image_tag studio, :image, format: "jpg", fallback: "no_image.jpg", size: "300x180" %>
+        <div class="card-body">
+          <h5 class="card-title"><%= link_to user.name, user_path(user) %></h5>
+          <% if @user_ids.include?(user.id) %>
+            <p class="card-text"><%= user.profile %></p>
+            <p class="card-text"><%= link_to "チャットへ", room_path(current_studio.rooms.find_by(user_id: user.id)) %></p>
+          <% else %>
+            <%= form_for Room.new do |f| %>
+              <%= f.hidden_field :user_id, :value => user.id %>
+              <%= f.submit %>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  </div>
+<% else %>
+  <div class="htitle">
+    <h3>ユーザー</h3>
+    <%= link_to "ログイン", new_user_session_path %> |
+    <%= link_to "新規登録", new_user_registration_path %>
+  </div>
+  <div class="htitle">
+    <h3>ショップ</h3>
+    <%= link_to "ログイン", new_studio_session_path %> |
+    <%= link_to "新規登録", new_studio_registration_path %>
+  </div>
+<% end %>

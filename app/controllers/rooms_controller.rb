@@ -4,10 +4,10 @@ class RoomsController < ApplicationController
     @message = Message.new
     @messages = @room.messages
     if user_signed_in?
-      if @room.user.id == current_user.id
-        @studio = @room.studio
-      else
+      if @room.user.id != current_user.id
         redirect_to '/'
+      else
+        @studio = @room.studio
       end
     elsif studio_signed_in?
       if @room.studio.id == current_studio.id
