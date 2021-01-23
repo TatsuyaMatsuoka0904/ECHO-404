@@ -1,32 +1,3 @@
-/ .event-body.body_content
-/   .container
-/     #event_head
-/       .center-block
-/         h2 = @event.name
-/       .events_show_container
-/         .head_info.col-xs-offset-4
-/           .start_date
-/             .heading
-/               h4 開演
-/             p = @event.start_at.strftime('%Y年%m月%d日 %H時%M分')
-/           .hold_place
-/             .heading
-/               h4 会場
-/             p = @event.place
-/         .main_info
-/           .event_detail_info
-/             h4 開場時間
-/             p = @event.start_at.strftime('%H時%M分')
-/             h4 閉演予定
-/             p = @event.end_at.strftime('%H時%M分')
-/             .event_explain
-/               p
-/                 span 紹介文
-/               p = @event.content
-/             - if current_studio
-/               .danger_button
-/
-
 h1.mt-3.mb-3 = @event.name
 .card.mb-2
   h5.card-header イベント内容
@@ -43,11 +14,12 @@ h1.mt-3.mb-3 = @event.name
 .card.mb-2
   h5.card-header 出演者
   .card-body
-    -if @event.performer?
+    - if @event.performer?
       p.card-text = @event.performer
-    -else
+    - else
       p.card-text 情報なし
 .card.mb-2
   h5.card-header 主催者
   .card-body
     p.card-text = @event.studio.name
+
