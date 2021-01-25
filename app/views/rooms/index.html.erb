@@ -26,7 +26,7 @@
   <div class="card-columns" style="width:60rem">
     <% @users.each do |user| %>
       <div class="card">
-        <%= attachment_image_tag studio, :image, format: "jpg", fallback: "no_image.jpg", size: "300x180" %>
+        <%= attachment_image_tag user, :image, format: "jpg", fallback: "no_image.jpg", size: "300x180" %>
         <div class="card-body">
           <h5 class="card-title"><%= link_to user.name, user_path(user) %></h5>
           <% if @user_ids.include?(user.id) %>
@@ -35,7 +35,7 @@
           <% else %>
             <%= form_for Room.new do |f| %>
               <%= f.hidden_field :user_id, :value => user.id %>
-              <%= f.submit %>
+              <%= f.submit "チャットを始める" %>
             <% end %>
           <% end %>
         </div>

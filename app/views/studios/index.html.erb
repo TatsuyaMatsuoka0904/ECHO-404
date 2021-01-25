@@ -1,13 +1,36 @@
-<h3>スタジオ一覧</h3>
-<div class="list-group">
+<div class="form-group">
+  <h3>スタジオ一覧</h3>
+</div>
+<div class="container">
+  <div class="search">
+    <%= search_form_for @studio do |f| %>
+      <%= f.label :address, "住所を入れてください" %>
+      <%= f.search_field :address_cont %>
+
+      <%= f.submit "検索" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="group-table">
+<table class="table table-sm">
+  <thead>
+  <tr>
+    <th></th>
+    <th>スタジオ名</th>
+    <th>住所</th>
+    <th></th>
+  </tr>
+  </thead>
+
+  <tbody>
   <% @studios.each do |s| %>
     <tr>
-      <td>
-        <%= link_to s.name, studio_path(s) %>
-      </td>
-      <td>
-        <%#= s.mail %>
-      </td>
+      <td><%= attachment_image_tag s, :image, format: "jpg",fallback: "no_image.jpg", size: "45x27" %></td>
+      <td><%= link_to s.name, studio_path(s) %></td>
+      <td><%= s.address %></td>
     </tr>
   <% end %>
+  </tbody>
+</table>
 </div>
