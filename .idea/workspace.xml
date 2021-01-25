@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2c30507-8c2a-406b-a3bf-3e6ed281e59f" name="デフォルト変更リスト" comment="#16[DBfix追加]">
-      <change afterPath="$PROJECT_DIR$/app/assets/images/no_image.jpg" afterDir="false" />
+    <list default="true" id="f2c30507-8c2a-406b-a3bf-3e6ed281e59f" name="デフォルト変更リスト" comment="#17[image追加]">
+      <change afterPath="$PROJECT_DIR$/app/assets/images/concert-768722_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/indoors-1869560_1920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/smartphone-407108_1280.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/echo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/echo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/railways.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/railways.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/rooms_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/rooms_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/studio.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/studio.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/rooms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/rooms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/studios.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/studios.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/events_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/events_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/homes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/homes_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/studios_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/studios_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/events/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/events/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/events/show.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/events/show.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/events/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/events/new.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/homes/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/homes/index.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/rooms/create.js.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rooms/create.js.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/rooms/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rooms/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/rooms/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rooms/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/rooms/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/rooms/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/studios/registrations/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studios/registrations/new.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/studios/sessions/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studios/sessions/new.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/studios/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studios/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/studios/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studios/registrations/edit.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/studios/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studios/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/users/registrations/edit.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/registrations/edit.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/registrations/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/registrations/new.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/sessions/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/sessions/new.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +109,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210124_0006" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210125_0014" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -264,7 +268,8 @@
       <workItem from="1611111075135" duration="314000" />
       <workItem from="1611112965655" duration="8091000" />
       <workItem from="1611214453563" duration="10602000" />
-      <workItem from="1611358142991" duration="25175000" />
+      <workItem from="1611358142991" duration="54401000" />
+      <workItem from="1611501046124" duration="29764000" />
     </task>
     <task id="LOCAL-00001" summary="git dev push">
       <created>1610337281659</created>
@@ -434,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611075647368</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="#17[image追加]">
+      <created>1611439809124</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1611439809124</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,6 +483,7 @@
     <MESSAGE value="#14[レイアウト geocod追加]" />
     <MESSAGE value="#15[depploy追加]" />
     <MESSAGE value="#16[DBfix追加]" />
-    <option name="LAST_COMMIT_MESSAGE" value="#16[DBfix追加]" />
+    <MESSAGE value="#17[image追加]" />
+    <option name="LAST_COMMIT_MESSAGE" value="#17[image追加]" />
   </component>
 </project>

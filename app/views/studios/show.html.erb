@@ -1,14 +1,167 @@
-<h2>ようこそ<%= @studio.name %>さん</h2>
-  <p>名前     :<%= @studio.name %></p>
-  <p>登録email:<%= @studio.email %></p>
-  <p>住所     :<%= @studio.address %></p>
+<div class="container">
+  <h2><%= @studio.name %>さん</h2>
+</div>
+<div class="images">
+  <%= attachment_image_tag @studio, :image, format: "jpg",fallback: "no_image.jpg", size: "450x270" %>
+</div>
+  <div class="g-table">
+    <table class="table table-sm">
+      <tbody>
+        <tr>
+          <td>名前:<%= @studio.name %></td>
+        </tr>
+        <tr>
+          <td>住所:<%= @studio.address %></td>
+        </tr>
+        <tr>
+          <td>郵便番号:<%= @studio.postal_code %></td>
+        </tr>
+
 
 <script type="text/javascript">
     function initMap() {
+
         var test ={lat: <%= @studio.latitude %> , lng: <%= @studio.longitude %>};
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 15,
-            center: test
+            center: test,
+            style :[
+                {
+                    "featureType": "all",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#202c3e"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "gamma": 0.01
+                        },
+                        {
+                            "lightness": 20
+                        },
+                        {
+                            "weight": "1.39"
+                        },
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "weight": "0.96"
+                        },
+                        {
+                            "saturation": "9"
+                        },
+                        {
+                            "visibility": "on"
+                        },
+                        {
+                            "color": "#000000"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "lightness": 30
+                        },
+                        {
+                            "saturation": "9"
+                        },
+                        {
+                            "color": "#29446b"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "saturation": 20
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "lightness": 20
+                        },
+                        {
+                            "saturation": -20
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "lightness": 10
+                        },
+                        {
+                            "saturation": -30
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#193a55"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "saturation": 25
+                        },
+                        {
+                            "lightness": 25
+                        },
+                        {
+                            "weight": "0.01"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "lightness": -20
+                        }
+                    ]
+                }
+            ]
         });
         var transitLayer = new google.maps.TransitLayer();
         transitLayer.setMap(map);
@@ -35,8 +188,15 @@
 </script>
 <style type="text/css">
     #map { height: 200px;
-        width: 70%;}
+        width: 70%;
+    }
 </style>
-
-<div id="map"></div>
-
+        <tr>
+          <td><div id="map"></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<% if current_studio == @studio %>
+  <%= link_to "アカウントを編集します",edit_studio_registration_path %>
+<% end %>
