@@ -8,4 +8,6 @@ class Studio < ApplicationRecord
   has_many :rooms
   has_many :created_events, class_name: 'Event', foreign_key: 'studio_id'
   after_validation :geocode, if: :address_changed?
+  validates :name, presence: true
+  validates :address, presence: true
 end

@@ -39,6 +39,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'database_cleaner'
+  gem 'factory_bot_rails'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -80,13 +83,13 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'pry-byebug'
 gem 'rails-i18n'
+gem 'ransack'
 gem 'redcarpet', '~> 2.3.0'
+gem 'refile', require: 'refile/rails', github: 'manfe/refile'
+gem 'refile-mini_magick'
 gem 'simple_calendar'
 gem 'slim-rails'
 gem 'summernote-rails'
-gem 'refile', require: 'refile/rails', github: 'manfe/refile'
-gem 'refile-mini_magick'
-gem 'ransack'
 
 gem 'dotenv-rails'
 group :production do
