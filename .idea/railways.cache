@@ -2,6 +2,8 @@
                       root GET    /                                                                                        homes#index
                      rooms GET    /rooms(.:format)                                                                         rooms#index
                 rooms_show GET    /rooms/show(.:format)                                                                    rooms#show
+              contacts_new GET    /contacts/new(.:format)                                                                  contacts#new
+           contacts_create GET    /contacts/create(.:format)                                                               contacts#create
                     events GET    /events(.:format)                                                                        events#index
                            POST   /events(.:format)                                                                        events#create
                  new_event GET    /events/new(.:format)                                                                    events#new
@@ -47,7 +49,7 @@ cancel_studio_registration GET    /studios/cancel(.:format)                     
              room_messages POST   /rooms/:room_id/messages(.:format)                                                       messages#create
                            POST   /rooms(.:format)                                                                         rooms#create
                       room GET    /rooms/:id(.:format)                                                                     rooms#show
-                refile_app        /attachments                                                                             #<Refile::App app_file="/Users/matsuoka/.bundle/ruby/2.6.0/refile-46b4178654e6/lib/refile/app.rb">
+                refile_app        /attachments                                                                             #<Refile::App app_file="/Users/matsuoka/RubymineProjects/ECHO-404/vender/bundle/ruby/2.6.0/bundler/gems/refile-46b4178654e6/lib/refile/app.rb">
         rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
  rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
         rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2c30507-8c2a-406b-a3bf-3e6ed281e59f" name="デフォルト変更リスト" comment="#17[image追加]">
-      <change beforePath="$PROJECT_DIR$/.idea/echo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/echo.iml" afterDir="false" />
+    <list default="true" id="f2c30507-8c2a-406b-a3bf-3e6ed281e59f" name="デフォルト変更リスト" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/railways.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/railways.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/studio.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/studio.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/studios/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studios/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210127_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210127_0003" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -105,6 +106,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/assets/images" />
       <recent name="$PROJECT_DIR$/app/views/rooms" />
       <recent name="$PROJECT_DIR$/app/views/layouts" />
@@ -252,7 +254,8 @@
       <workItem from="1611501046124" duration="29764000" />
       <workItem from="1611648241330" duration="3093000" />
       <workItem from="1611654264215" duration="250000" />
-      <workItem from="1611656942638" duration="11983000" />
+      <workItem from="1611656942638" duration="14595000" />
+      <workItem from="1611710246817" duration="822000" />
     </task>
     <task id="LOCAL-00001" summary="git dev push">
       <created>1610337281659</created>
@@ -429,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611439809124</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="#19 [test追加]">
+      <created>1611705175236</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1611705175236</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,6 +477,7 @@
     <MESSAGE value="#15[depploy追加]" />
     <MESSAGE value="#16[DBfix追加]" />
     <MESSAGE value="#17[image追加]" />
-    <option name="LAST_COMMIT_MESSAGE" value="#17[image追加]" />
+    <MESSAGE value="#19 [test追加]" />
+    <option name="LAST_COMMIT_MESSAGE" value="#19 [test追加]" />
   </component>
 </project>

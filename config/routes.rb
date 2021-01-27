@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root to:'homes#index'
   get '/rooms' => 'rooms#index'
   get 'rooms/show'
+  get 'contacts/new'
+  get 'contacts/create'
   resources :events
 
   devise_for :users, :controllers => {
