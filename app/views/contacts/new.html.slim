@@ -1,0 +1,10 @@
+.title
+  h2 お問い合わせ
+= form_for @contact do |f|
+  .form-group
+    = f.text_field :email, class: 'form-control', placeholder:'返信先メールアドレス'
+  .form-group
+    = f.text_area :message,class: 'form-control', placeholder:'お問い合わせ内容'
+  .f-btn
+    = f.submit "送信する", class: "btn btn-border btn-block"
+
