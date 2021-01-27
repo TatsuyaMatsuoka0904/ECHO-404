@@ -4,6 +4,7 @@ class StudiosController < ApplicationController
   end
 
   def index
-    @studios = Studio.all
+    @studio = Studio.ransack(params[:q])
+    @studios = @studio.result(distinct: true)
   end
 end
