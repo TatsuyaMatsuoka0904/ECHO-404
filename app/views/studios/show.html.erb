@@ -2,7 +2,7 @@
   <h2><%= @studio.name %>さん</h2>
 </div>
 <div class="images">
-  <%= attachment_image_tag @studio, :image, format: "jpg",fallback: "no_image.jpg", size: "450x270" %>
+    <%= attachment_image_tag @studio, :image, format: "jpg",fallback: "no_image.jpg", size: "450x250" %>
 </div>
   <div class="g-table">
     <table class="table table-sm">
@@ -24,144 +24,7 @@
         var test ={lat: <%= @studio.latitude %> , lng: <%= @studio.longitude %>};
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 15,
-            center: test,
-            style :[
-                {
-                    "featureType": "all",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "color": "#202c3e"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "all",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "gamma": 0.01
-                        },
-                        {
-                            "lightness": 20
-                        },
-                        {
-                            "weight": "1.39"
-                        },
-                        {
-                            "color": "#ffffff"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "all",
-                    "elementType": "labels.text.stroke",
-                    "stylers": [
-                        {
-                            "weight": "0.96"
-                        },
-                        {
-                            "saturation": "9"
-                        },
-                        {
-                            "visibility": "on"
-                        },
-                        {
-                            "color": "#000000"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "all",
-                    "elementType": "labels.icon",
-                    "stylers": [
-                        {
-                            "visibility": "off"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "landscape",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "lightness": 30
-                        },
-                        {
-                            "saturation": "9"
-                        },
-                        {
-                            "color": "#29446b"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "saturation": 20
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi.park",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "lightness": 20
-                        },
-                        {
-                            "saturation": -20
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "lightness": 10
-                        },
-                        {
-                            "saturation": -30
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                        {
-                            "color": "#193a55"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road",
-                    "elementType": "geometry.stroke",
-                    "stylers": [
-                        {
-                            "saturation": 25
-                        },
-                        {
-                            "lightness": 25
-                        },
-                        {
-                            "weight": "0.01"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "water",
-                    "elementType": "all",
-                    "stylers": [
-                        {
-                            "lightness": -20
-                        }
-                    ]
-                }
-            ]
+            center: test
         });
         var transitLayer = new google.maps.TransitLayer();
         transitLayer.setMap(map);
@@ -187,8 +50,8 @@
         src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>&callback=initMap">
 </script>
 <style type="text/css">
-    #map { height: 200px;
-        width: 70%;
+    #map { height: 300px;
+        width: 100%;
     }
 </style>
         <tr>

@@ -33,7 +33,7 @@ class DeviseCreateStudios < ActiveRecord::Migration[5.2]
       # t.datetime :locked_at
 
       t.string :name
-      t.string :studio_image
+      t.string :image_id
       t.string :tel
       t.string :postal_code
 
