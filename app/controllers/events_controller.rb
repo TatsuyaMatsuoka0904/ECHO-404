@@ -15,7 +15,7 @@ class EventsController < ApplicationController
 
   def index
     @events = Event.all
-    @event = Event.where(start_at: DateTime.now.beginning_of_month..DateTime.now.end_of_month).reorder(:start_at).order(star_at: 'ASC')
+    @event = Event.where(start_at: DateTime.now.beginning_of_month..DateTime.now.end_of_month).reorder(:start_at).order(start_at: 'ASC')
   end
 
   def show
