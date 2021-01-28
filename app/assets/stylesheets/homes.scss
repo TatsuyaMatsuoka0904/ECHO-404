@@ -3,9 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-img{
-  background-image: image-url("smartphone-407108_1280.jpg");
-  background-image: image-url("indoors-1869560_1920.jpg");
-//   with: 100%;
-//   height: 620px;
+// img{
+//   background-image: image-url("smartphone-407108_1280.jpg");
+//   background-image: image-url("indoors-1869560_1920.jpg");
+// //   with: 100%;
+// //   height: 620px;
+// }
+
+.home_image{
+    with: 100%;
+    height: 620px;
 }
