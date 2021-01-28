@@ -6,10 +6,10 @@
   /画像の部分
   .carousel-inner role="listbox"
     .carousel-item.active
-      .home_image= image_tag asset_path("smartphone-407108_1280.jpg", alt: "First slide")
+      .homeimg1= image_tag asset_path("smartphone-407108_1280.jpg")
       .link-list1=link_to "EVENT",events_path
     .carousel-item
-      .home_image= image_tag asset_path("indoors-1869560_1920.jpg", alt: "Second slide")
+      .homeimg2= image_tag asset_path("indoors-1869560_1920.jpg")
       .link-list2=link_to "STUDIO",studios_path
   /左ボタン
   a.carousel-control-prev data-slide="prev" href="#carouselExampleIndicators" role="button"
