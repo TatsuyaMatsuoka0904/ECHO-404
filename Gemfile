@@ -90,6 +90,8 @@ gem 'refile-mini_magick'
 gem 'simple_calendar'
 gem 'slim-rails'
 gem 'summernote-rails'
+gem 'mini_magick'
+gem 'aws-sdk-s3', require: false
 
 gem 'dotenv-rails'
 group :production do
